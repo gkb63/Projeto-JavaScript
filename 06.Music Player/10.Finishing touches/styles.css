@@ -1,0 +1,90 @@
+html {
+  font-size: 10px;
+  font-family: "Marker Felt", fantasy;
+  letter-spacing: 4px;
+}
+
+body {
+  background: linear-gradient(#c758c1, #613b9e);
+  min-height: 100vh;
+  color: rgb(187, 187, 197);
+  font-size: 1.4rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.player {
+  background: radial-gradient(#711b7c, #49178b);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+img {
+  width: 50%;
+}
+
+#controls {
+  border: 5px rgb(239, 241, 247) solid;
+  border-radius: 1rem;
+  padding: 1.6rem;
+}
+
+.controls_wrapper > span {
+  cursor: pointer;
+  color: rgb(31, 16, 163);
+  font-size: 6rem;
+  padding: 2rem;
+}
+
+#currentSong {
+  overflow: hidden;
+}
+
+#songList {
+  overflow: hidden;
+  text-align: left;
+}
+
+li {
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+li:hover {
+  background: #a968bd;
+}
+
+progress {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: rgb(214, 180, 204);
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 60vw;
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 0.4s;
+}
